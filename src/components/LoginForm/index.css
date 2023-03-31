@@ -1,0 +1,89 @@
+/* Write your CSS code here */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+.login-card {
+  height: 250px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 18px gray;
+}
+
+::placeholder {
+  padding-left: 5px;
+}
+.login-image {
+  height: 50vh;
+  width: 600px;
+}
+.login-logo {
+  align-self: center;
+  height: 50px;
+  width: 136px;
+  padding-bottom: 30px;
+}
+.small-login-logo {
+  align-self: center;
+  height: 50px;
+  width: 136px;
+  padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .login-image {
+    height: 200px;
+    width: 300px;
+  }
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .login-logo {
+    display: none;
+  }
+  .small-login-logo {
+    align-self: center;
+    height: 50px;
+    width: 136px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .small-login-logo {
+    display: none;
+  }
+}
+.input-card {
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+label {
+  margin-top: 10px;
+}
+input {
+  margin-top: 5px;
+  background-color: lightgray;
+  border: none;
+  height: 35px;
+  border-radius: 2px;
+}
+input:hover {
+  outline-color: lightslategray;
+}
+.submit-button {
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 46px;
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
